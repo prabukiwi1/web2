@@ -1,14 +1,16 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>CHAT BOT</title>
-</head>
-<body>
-<iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/5a7b15bb-f313-4021-9b86-947dd50678df">
-</iframe>
-</body>
+    <head>
+        <title>Graph</title>
+    </head>
+    <body>
+        <script>
+            getData();
+            async function getData()
+            {
+                const response=await fetch('abc.csv');
+                const data=await response.text();
+                console.log(data);
+            }
+            </script>
+    </body>
 </html>
