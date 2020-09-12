@@ -7,6 +7,7 @@
     	<canvas id="chart" width="400" height="400"></canvas>
         <script>
         	const xlabels=[];
+        	const ytemps=[];
         	chartIT();
         	async function chartIT()
         	{
@@ -19,7 +20,7 @@ const myChart = new Chart(ctx, {
         labels: xlabels,
         datasets: [{
             label: 'Global Avearage Temp',
-            data: [12, 19, 3, 5, 2, 3],
+            data: ytemps,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
             ],
@@ -41,6 +42,7 @@ const myChart = new Chart(ctx, {
                     const year=columns[0];
                     xlabels.push(year);
                     const temp=columns[1];
+                    ytemps.push(temp);
                     console.log(year,temp);
                 });
 
