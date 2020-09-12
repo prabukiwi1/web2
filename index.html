@@ -14,9 +14,9 @@
 	async function chartIT()
 	{
 		await getData();
-	var ctx = document.getElementById('myChart').getContext('2d');
+	const ctx = document.getElementById('myChart').getContext('2d');
 	
-var myChart = new Chart(ctx, {
+const myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: xlabels,
