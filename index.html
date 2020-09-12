@@ -42,7 +42,7 @@ const myChart = new Chart(ctx, {
                     const year=columns[0];
                     xlabels.push(year);
                     const temp=columns[1];
-                    ytemps.push(temp);
+                    ytemps.push(parseFloat(temp)+14);
                     console.log(year,temp);
                 });
 
