@@ -10,7 +10,8 @@
 	{
 		const response=await fetch('abc.csv');
 		const data=await response.text();
-		console.log(data);
+		const table=data.split('\n');
+		console.log(table);
 	}
 </script>
 </body>
