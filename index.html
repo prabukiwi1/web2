@@ -8,12 +8,13 @@
 	<canvas id="chart" width="400" height="400"></canvas>
 <script type="text/javascript">
 	const xlabels=[];
+	const ytemps=[];
 	chartIT();
 	async function chartIT()
 	{
 		await getData();
 	const ctx = document.getElementById('chart').getContext('2d');
-	
+
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -41,6 +42,7 @@ const myChart = new Chart(ctx, {
 			const year=columns[0];
 			xlabels.push(year);
 			const temp=columns[1];
+			ytemps.push(temp);
 			console.log(year,temp);
 		});
 	}
