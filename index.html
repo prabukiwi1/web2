@@ -7,13 +7,13 @@
 <body>
 	<canvas id="chart" width="400" height="400"></canvas>
 <script type="text/javascript">
-	
+	const xlabels=[];
 	chartIT();
 	async function chartIT()
 	{
 		await getData();
 	const ctx = document.getElementById('chart').getContext('2d');
-	const xlabels=[];
+	
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
